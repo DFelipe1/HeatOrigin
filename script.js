@@ -13,9 +13,14 @@ function changeSocialMediaLinks() {
         const social = li.getAttribute('class').split(' ')
 
         
+        if(social[0] == LinksSocialMedia.streamPlataform){
+            li.children[0].href = `https://${social[0]}.live/${LinksSocialMedia.stream}`
+
+        }else{
+            
+            li.children[0].href = `https://${social[0]}.com/${LinksSocialMedia[social[0]]}`
+        }
         
-        
-        li.children[0].href = `https://${social[0]}.com/${LinksSocialMedia[social[0]]}`
     }
 }
 
@@ -43,15 +48,11 @@ function conect() {
     for(let i in LinksSocialMedia){
         const social = document.getElementById(`${i}`).value 
 
-        
-        
-        
-        if(social == ""){
-            alert(`Preenca os campos do formulario`)
+        LinksSocialMedia[i] = social
+
+        if( LinksSocialMedia.github == '' ) {
+            alert('Preencha o Campo do github')
             return
-        } else {
-            LinksSocialMedia[i] = social
-            
         }
     }
 
@@ -116,6 +117,7 @@ function createContentGracha() {
         // Node 2 Link Github
             const userLink = document.createElement('a')
             userLink.id = 'userLink'
+            userLink.target = '_blank'
             userLink.classList.add('login-github')
 
                 const imgGithub = document.createElement('img')
@@ -146,13 +148,20 @@ function createContentGracha() {
             SocialLinks.classList.add('social-links')
 
 
+
                 for( i in LinksSocialMedia){
-                    if(i == 'streamPlataform'){
-                        createLi(LinksSocialMedia[i], SocialLinks)
+
+                    if(!LinksSocialMedia[i] == ''){
+                        
+                        if(i == 'streamPlataform'){
+                            createLi(LinksSocialMedia[i], SocialLinks)
+                        }
+                        if(i != 'github' && i != 'stream' && i != 'streamPlataform'){
+                            createLi(i, SocialLinks)
+                        }
+
                     }
-                    if(i != 'github' && i != 'stream' && i != 'streamPlataform'){
-                        createLi(i, SocialLinks)
-                    }
+                   
                 }
                 
                 

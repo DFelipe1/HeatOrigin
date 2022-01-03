@@ -27,7 +27,7 @@
 
 
 .avatar div img {
-    width: 10rem;
+    width: 100%;
     height: 11.5rem;
 
     object-fit: cover;
@@ -56,6 +56,7 @@
 .login-github span {
     font-size: 16px;
     color: var(--grey);
+    margin-left: 4px;
 }
 
 .bio {
@@ -96,35 +97,35 @@
     }
 }
 
-.cardSciallink.youtube:hover a img {
+.cardSociallink.youtube:hover a img {
     filter: brightness(0.5) sepia(1) saturate(37) hue-rotate(
         341deg);
 }
-.cardSciallink.facebook:hover  a img {
+.cardSociallink.facebook:hover  a img {
     filter: brightness(0.5) sepia(1) saturate(50) hue-rotate(
         180deg);
 }
-.cardSciallink.instagram:hover  a img {
+.cardSociallink.instagram:hover  a img {
     /* background: linear-gradient(#7523BF, #C3256B, #DD903F); */
     filter: brightness(0.5) sepia(5) saturate(5) hue-rotate(
         9deg);
 }
-.cardSciallink.twitter:hover  a img {
+.cardSociallink.twitter:hover  a img {
     filter: brightness(0.5) sepia(1) saturate(5) hue-rotate(140deg);
 }
-.cardSciallink.twitch:hover  a img {
+.cardSociallink.twitch:hover  a img {
     filter: brightness(0.5) sepia(1) saturate(13) hue-rotate(223deg)
 }
-.cardSciallink.nimo:hover  a img {
+.cardSociallink.nimo:hover  a img {
     filter: brightness(0.5) sepia(1) saturate(41) hue-rotate(
         219deg);
 }
-.cardSciallink.trovo:hover  a img {
+.cardSociallink.trovo:hover  a img {
     filter: brightness(0.5) sepia(1) saturate(41) hue-rotate(
         123deg)
 }
 
-.cardSciallink a {
+.cardSociallink a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -134,11 +135,11 @@
     overflow: hidden;
 }
 
-.cardSciallink a:hover div {
+.cardSociallink a:hover div {
     opacity: 1;
 }
 
-.cardSciallink a div{
+.cardSociallink a div{
     width: 100%;
     height: 100%;
     display: flex;
@@ -150,7 +151,7 @@
     transition: opacity 0.5s;
 }
 
-.cardSciallink a div::before {
+.cardSociallink a div::before {
     content: "";
     background: conic-gradient(
         #FF008E 50%,
@@ -163,7 +164,7 @@
     animation: rotate 2s linear infinite;
     opacity: 1;
 }
-.cardSciallink a div::after {
+.cardSociallink a div::after {
     opacity: 1;
     content: '';
     width: 45px;
@@ -173,7 +174,15 @@
     /* box-shadow: inset 20px 20px 20px rgba(0,0,0,0.2); */
 }
 
-.cardSciallink a img {
+.cardSociallink a img {
     position: absolute;
     z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+    .avatar div img {
+        width: 8rem;
+        height: 9rem; 
+    }
 }

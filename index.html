@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/user-info.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/user-info.css">
 </head>
 <body>
     
@@ -24,8 +24,8 @@
             <h1 class="title">Conecte-se</h1>
 
             <form action="">
-                <label for="github">Login github</label>
-                <input type="text" placeholder="Login github" id="github">
+                <label for="github" >Login github <span class="required">*</span></label>
+                <input type="text" placeholder="Login github" id="github" >
 
                 
                 <h2 class="title">Redes Socias</h2>
@@ -55,20 +55,20 @@
                 </div>
 
 
-                <div class="flex">
+                <div class="flex animate">
                     <div>
                         <label for="streamPlataform">stream</label>
-                        <select name="streamPlataform" id="streamPlataform">
-                            <option value="">selecione</option>
+                        <select name="streamPlataform" id="streamPlataform" onchange="EnableStream()">
+                            <option value="">Plataforma</option>
                             <option value="twitch">twitch</option>
                             <option value="nimo">nimo</option>
                             <option value="trovo">trovo</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="stream">stream</label>
-                        <input type="text" placeholder="nome de usuário" id="stream">
+                    <div id='divStream' class="disabled">
+                        <label for="stream" disabled>stream</label>
+                        <input type="text" placeholder="nome de usuário" id="stream" disabled>
                     </div>
                 </div>
 
@@ -78,7 +78,19 @@
         </div>
     </main>
     
+    <script>
+       const streamPlataform = document.getElementById('streamPlataform').value;
 
+       function EnableStream() {
+            divStream.classList.remove('disabled');
+             for( i of divStream.children) {
+                 
+                 i.removeAttribute('disabled')
+             } 
+       }
+
+       
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
