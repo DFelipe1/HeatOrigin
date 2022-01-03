@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
         github: '',
-        youtube: '',
-        facebook: '',
-        instagram: '',
-        twitter: '',
+        YouTube: '',
+        Facebook: '',
+        Instagram: '',
+        Twitter: '',
         streamPlataform: '',
         stream: '',
     }
@@ -86,7 +86,7 @@ function createContentGracha() {
 
         const imgBuild = document.createElement('img')
         imgBuild.classList.add('build')
-        imgBuild.src = './images/build.svg'
+        imgBuild.src = 'images/build.svg'
 
         createChild(avatar, imgBuild)
 
@@ -121,7 +121,7 @@ function createContentGracha() {
             userLink.classList.add('login-github')
 
                 const imgGithub = document.createElement('img')
-                imgGithub.src = '/images/github.svg'
+                imgGithub.src = 'images/github.svg'
 
                 // Add Image github
                 createChild(userLink, imgGithub)
