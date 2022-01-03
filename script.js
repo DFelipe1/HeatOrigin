@@ -201,7 +201,7 @@ function createLi(name, nodeDad){
 
                         const socialImg = document.createElement('img')
                         socialImg.classList.add(`${name}`)
-                        socialImg.src = `/images/${name}.svg`
+                        socialImg.src = `images/${name}.svg`
 
                         createChild(link, socialImg)
 
