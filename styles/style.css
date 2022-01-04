@@ -78,6 +78,10 @@ main {
    
 } */
 
+.form-content {
+    margin-top: 100px;
+}
+
 
 .title {
     font-size: 40px;
@@ -212,9 +216,6 @@ form  .title {
         top: 197px;
     }
 
-    .content {
-        margin-top: 100px;
-    }
     
 }
 
