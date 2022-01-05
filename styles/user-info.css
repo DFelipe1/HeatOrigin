@@ -77,7 +77,6 @@
     min-width: 48px;
     height: 48px;
     background: #323238;
-    
     transition: all 0.5s;
     position: relative;
     overflow: hidden;
@@ -91,9 +90,43 @@
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
+        
     }
+    
+    /* 20% {
+        opacity: 1;
+    } */
+    
+    30% {
+        background: conic-gradient(
+            #FFCD1E,
+            rgba(0,0,0, 0) 100deg
+            ); 
+    }
+
+    
+
+    45% { 
+        background: conic-gradient(
+            #FF008E,
+            rgba(0,0,0, 0) 100deg
+            ); 
+    } 
+
+    85%{
+            background: conic-gradient(
+            #FFCD1E,
+            rgba(0,0,0, 0) 100deg
+            );
+    } 
+
     100% {
+        background: conic-gradient(
+            #FF008E,
+            rgba(0,0,0, 0) 100deg
+            );
         transform: rotate(-360deg);
+        
     }
 }
 
@@ -154,14 +187,14 @@
 .cardSociallink a div::before {
     content: "";
     background: conic-gradient(
-        #FF008E 50%,
-        #FFCD1E 50%
-        
+        #FF008E,
+        rgba(0,0,0, 0) 100deg
     );
+    
     width: 150%;
     height: 150%;
     position: absolute;
-    animation: rotate 2s linear infinite;
+    animation: rotate 4s linear infinite;
     opacity: 1;
 }
 .cardSociallink a div::after {
