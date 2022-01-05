@@ -37,7 +37,7 @@ a {
     width: 500px;
     height: 500px;
     position: fixed;
-    top: -500px;
+    top: -240px;
     right: 50%;
     border-radius: 50%;
     filter: blur(150px);
