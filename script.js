@@ -28,27 +28,24 @@ function changeSocialMediaLinks() {
 function getGithubProfileInfos() {
     const url = `https://api.github.com/users/${LinksSocialMedia.github}`
 
-    
     function setDataINHTML(data) {
-
-
+    
+    
         if(data.message) {
             alert("esse usuario não existe")
             return
         } else {
-
+    
             createContentGracha()
-
+    
             userName.textContent = data.name
             userBio.textContent = data.bio
             userLink.href = data.html_url
             userImage.src = data.avatar_url
             userLogin.textContent =data.login
-
+    
             
-        } 
-
-        
+        }   
     }
 
      fetch(url)
@@ -56,11 +53,14 @@ function getGithubProfileInfos() {
         .then(data => {
 
             setDataINHTML(data)
+            
 
-        })
-
-        
+        })    
 }
+
+
+
+
 
 
 function conect() {
@@ -91,6 +91,8 @@ button.addEventListener('click', (e) => {
 
 function createContentGracha() {
     const content = document.querySelector(".content")
+
+    
 
     for( let i of content.children){
         
@@ -200,7 +202,7 @@ function createContentGracha() {
     Main.appendChild(newContent)
 
     changeSocialMediaLinks()
-    getGithubProfileInfos()
+    
    
 }
 
