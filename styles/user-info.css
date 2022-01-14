@@ -20,8 +20,8 @@
 
 .avatar .build {
     position: absolute;
-    top: -15px;
-    left: 0;
+    top: -25px;
+    left: -10px;
     z-index: 2;
 }
 
@@ -34,6 +34,8 @@
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);  
 }
+
+
 
 .user-info {
     
@@ -215,7 +217,7 @@
 
 @media (min-width: 768px) {
     .avatar div img {
-        width: 8rem;
-        height: 9rem; 
+        width: 9rem;
+        height: 10.5rem; 
     }
 }
