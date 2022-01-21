@@ -6,7 +6,8 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#test_tube-Experiência">Experiência</a>
 </p>
 
 <p align="center">
@@ -53,4 +54,4 @@ Como sempre é uma experiência unica participar de um NLW, e nesse especialment
 
 Eu sei não ta a coisa mais linda do mundo, mas o meu foco era fazer isso funcionar e pra mim estudar mais a DOM, toda a parte do crachá foi feita pelo javascript, eu poderia ter usado EJS ou Nunjucks, mas preferir deixar bem simples e não perder a essência do NLW.
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Quer participar de eventos e aulas muito massa? então faça parte desse foguete, Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
