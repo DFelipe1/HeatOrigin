@@ -42,7 +42,6 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
 
----
 
 ## :test_tube: Experiência
 
@@ -53,5 +52,7 @@ Como sempre é uma experiência unica participar de um NLW, e nesse especialment
 </p>
 
 Eu sei não ta a coisa mais linda do mundo, mas o meu foco era fazer isso funcionar e pra mim estudar mais a DOM, toda a parte do crachá foi feita pelo javascript, eu poderia ter usado EJS ou Nunjucks, mas preferir deixar bem simples e não perder a essência do NLW.
+
+---
 
 Quer participar de eventos e aulas muito massa? então faça parte desse foguete, Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
